@@ -44,7 +44,7 @@
 .navbar .menu li a:hover{
     color:crimson;
 }
-/* Home section*/
+/* Home section style*/
 .home{
     display:flex;
     background:url(img/banner.jpg) no-repeat center;
