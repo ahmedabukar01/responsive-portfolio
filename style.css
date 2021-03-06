@@ -16,6 +16,11 @@
     width:100%;
     padding:15px 0;
     font-family:'Ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.nav-affect{
+    background:crimson;
+    padding:15px 0;
 }
 .max-width{
     display:flex;
@@ -29,6 +34,10 @@
 }
 .navbar .logo a span{
     color:crimson;
+    transition: all 0.3s ease;
+}
+.navbar.nav-affect a span{
+    color:#fff;
 }
 .navbar .menu li{
     list-style: none;
@@ -43,6 +52,15 @@
 }
 .navbar .menu li a:hover{
     color:crimson;
+}
+.navbar.nav-affect .menu li a:hover{
+    color:#fff;
+}
+.menu-btn{
+    color:#fff;
+    font-size:23px;
+    cursor:pointer;
+    display:none;
 }
 
 /* Home section style*/
