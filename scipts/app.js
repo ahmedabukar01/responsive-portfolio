@@ -1,7 +1,8 @@
 // DOM
 const navBar = document.querySelector('.navbar');
 const menu = document.querySelector('.menu');
-const bar = document.querySelector('.menu-btn i');
+const bar = document.querySelector('.menu-btn');
+const i = document.querySelector('.menu-btn i');
 
 // Affects
 window.addEventListener('scroll', e=>{
@@ -14,5 +15,5 @@ window.addEventListener('scroll', e=>{
 });
 bar.addEventListener('click',e=>{
     menu.classList.toggle('active');
-    console.log('CLICKED')
+    i.classList.toggle('fa-times');
 })
