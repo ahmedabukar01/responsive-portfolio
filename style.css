@@ -14,6 +14,7 @@
 .navbar{
     position:fixed;
     width:100%;
+    z-index:999;
     padding:15px 0;
     font-family:'Ubuntu',sans-serif;
     transition: all 0.3s ease;
@@ -91,7 +92,137 @@
     color:crimson;
     font-weight: 500;
 }
+.home .home-content a{
+    display:inline-block;
+    font-size:25px;
+    padding:12px 36px;
+    color:#fff;
+    background:crimson;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    background:none;
+    color:crimson;
+}
+section{
+    padding:100px 0;
+}
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+.about h1,.services h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+    position:relative;
+    font-size:40px;
+    margin-bottom:30px;
+    padding-bottom: 20px;
+}
+.about h1::before,
+.services h1::before{
+    content: '';
+    position:absolute;
+    width:130px;
+    background:#000;
+    height:4px;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%);
+}
+.about h1::after{
+    content: 'Who I am';
+}
+.services h1::after{
+    content:'what we do';
+}
+.about h1::after,
+.services h1::after{
+    position:absolute;
+    padding:5px;
+    bottom:-9px;
+    font-size:12px;
+    background:#fff;
+    left:50%;
+    color:crimson;
+    transform:translate(-50%);
+}
+.services h1::after{
+    content:'what we do';
+    background:#000;
+}
+.services h1::before{
+    background:#fff;
+}
 
+
+.about .about-content, .services .serv-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.about .about-content .left{
+    width:45%;
+}
+.about .about-content .right{
+    width:55%;
+}
+.about .about-content .left img{
+    width:400px;
+    height:400px;
+    object-fit: cover;
+}
+.about .about-content .right .mytext{
+    font-size:25px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+.about .about-content .right .mytext span{
+    color:crimson;
+}
+.about .about-content .right p{
+    text-align:justify;
+}
+.about .about-content .right a{
+    display:inline-block;
+    font-size:20px;
+    padding:10px 30px;
+    color:#fff;
+    background:crimson;
+    margin-top:20px;
+    border-radius:6px;
+    border:2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+.about .about-content .right a:hover{
+    background:none;
+    color:crimson;
+}
+.services{
+    background:#000;
+    color:#fff;
+    padding:100px 0;
+}
+.services .card{
+    width: calc(33% - 20px);
+    background:#222;
+    padding:20px 25px;
+    text-align:center;
+    border-radius:6px;
+}
+.services .card i{
+    font-size:50px;
+    color:crimson;
+}
+.services .card .text{
+    font-weight: 600;
+    font-size: 25px;
+    margin:10px 0 7 0;
+}
 /* responsive desing */
 @media (max-width:941px){
     .max-width{
@@ -140,6 +271,14 @@
     .home .home-content .text3{
         font-size: 30px;
     }
+    .home .home-content a{
+        font-size:23px;
+        padding:11px 30px;
+    }
+    .about .about-content .left img{
+        width:350px;
+        height:350px;
+    }
 }
 @media (max-width:782px){
     .menu-btn{
@@ -168,6 +307,10 @@
     .home .home-content .text3{
         font-size: 27px;
     }
+    .home .home-content a{
+        font-size:22px;
+        padding:10px 27px;
+    }
 }
 @media (max-width:668px){
     .menu-btn{
@@ -185,7 +328,15 @@
 }
 @media (max-width:600px){
     .max-width{
+        width:800px;
         padding:0 40px;
+    }
+    .about .about-content .left{
+        display:flex;
+        width:100%;
+    }
+    .about .about-content .right{
+        flex:100%;
     }
     .menu-btn{
         margin-right:59%;
@@ -198,6 +349,10 @@
     }
     .home .home-content .text3{
         font-size: 26px;
+    }
+    .home .home-content a{
+        font-size:19px;
+        padding:10px 25px;
     }
 }
 @media (max-width:547px){
@@ -301,5 +456,9 @@
     }
     .home .home-content .text3{
         font-size: 17px;
+    }
+    .home .home-content a{
+        font-size:16px;
+        padding:8px 20px;
     }
 }
