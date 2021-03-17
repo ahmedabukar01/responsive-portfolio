@@ -113,7 +113,7 @@ section{
 .about, .services, .skills{
     font-family: 'Poppins', sans-serif;
 }
-.about h1,.services h1, .skills h1{
+.about h1,.services h1, .skills h1, .teams h1{
     font-family: 'Ubuntu', sans-serif;
     text-align:center;
     position:relative;
@@ -123,7 +123,8 @@ section{
 }
 .about h1::before,
 .services h1::before,
-.skills h1::before{
+.skills h1::before,
+.teams h1::before{
     content: '';
     position:absolute;
     width:130px;
@@ -139,9 +140,13 @@ section{
 .services h1::after{
     content:'what we do';
 }
+.teams h1::after{
+    content:"Our team"
+}
 .about h1::after,
 .services h1::after,
-.skills h1::after{
+.skills h1::after,
+.teams h1::after{
     position:absolute;
     padding:5px;
     bottom:-9px;
@@ -153,9 +158,13 @@ section{
 }
 .services h1::after{
     content:'what we do';
+}
+.services h1::after,
+.teams h1::after{
     background:#000;
 }
-.services h1::before{
+.services h1::before,
+.teams h1::before{
     background:#fff;
 }
 .skills h1::after{
@@ -207,7 +216,7 @@ section{
     background:none;
     color:crimson;
 }
-.services{
+.services,.teams{
     background:#000;
     color:#fff;
     padding:100px 0;
