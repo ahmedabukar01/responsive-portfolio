@@ -16,4 +16,28 @@ window.addEventListener('scroll', e=>{
 bar.addEventListener('click',e=>{
     menu.classList.toggle('active');
     i.classList.toggle('fa-times');
+});
+
+// jquery
+$(document).ready(function(){
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayHoverPause:true,
+        autoplayTimeOut:2000,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false
+            }
+        }
+    })
 })
