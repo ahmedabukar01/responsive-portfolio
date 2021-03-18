@@ -110,10 +110,10 @@
 section{
     padding:100px 0;
 }
-.about, .services, .skills{
+.about, .services, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
-.about h1,.services h1, .skills h1, .teams h1{
+.about h1,.services h1, .skills h1, .teams h1, .contact h1{
     font-family: 'Ubuntu', sans-serif;
     text-align:center;
     position:relative;
@@ -124,7 +124,8 @@ section{
 .about h1::before,
 .services h1::before,
 .skills h1::before,
-.teams h1::before{
+.teams h1::before,
+.contact h1::before{
     content: '';
     position:absolute;
     width:130px;
@@ -143,10 +144,14 @@ section{
 .teams h1::after{
     content:"Our team"
 }
+.contact h1::after{
+    content:"get in touch"
+}
 .about h1::after,
 .services h1::after,
 .skills h1::after,
-.teams h1::after{
+.teams h1::after,
+.contact h1::after{
     position:absolute;
     padding:5px;
     bottom:-9px;
@@ -172,7 +177,8 @@ section{
 }
 
 
-.about .about-content, .services .serv-content, .skills .skills-content{
+.about .about-content, .services .serv-content,
+.skills .skills-content, .contact .contact-content{
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -371,6 +377,38 @@ section{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+.contact .contact-content .column{
+    width:calc(50% - 30px);
+}
+.contact .contact-content .left .text{
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display:flex;
+    align-items: center;
+    height: 65px;
+}
+.contact .contact-content .left p{
+    text-align:justify;
+}
+.contact .contact-content .row .info{
+    margin-left:30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .info .subtitle{
+    color:#222;
 }
 /* responsive desing */
 @media (max-width:941px){
