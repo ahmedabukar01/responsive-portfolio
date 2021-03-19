@@ -53,3 +53,11 @@ $(document).ready(function(){
         $('html').animate({scrollTop:0});
     })
 })
+
+// typing
+const typed = new Typed(".typing",{
+    strings: ["Developer","Freelancer","Blogger","YouTuper","Designer"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+})
