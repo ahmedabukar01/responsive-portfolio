@@ -1,6 +1,7 @@
 // DOM
 const navBar = document.querySelector('.navbar');
 const menu = document.querySelector('.menu');
+const scrollUp = document.querySelector('.scroll-up');
 const bar = document.querySelector('.menu-btn');
 const i = document.querySelector('.menu-btn i');
 
@@ -12,7 +13,14 @@ window.addEventListener('scroll', e=>{
     else{
         navBar.classList.remove('nav-affect')
     }
+
+    if(window.scrollY > 500){
+        scrollUp.classList.add('show');
+    }else{
+        scrollUp.classList.remove('show');
+    }
 });
+
 bar.addEventListener('click',e=>{
     menu.classList.toggle('active');
     i.classList.toggle('fa-times');
@@ -20,6 +28,7 @@ bar.addEventListener('click',e=>{
 
 // jquery
 $(document).ready(function(){
+
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -39,5 +48,8 @@ $(document).ready(function(){
                 nav:false
             }
         }
+    })
+    $('.scroll-up').click(function(){
+        $('html').animate({scrollTop:0});
     })
 })
